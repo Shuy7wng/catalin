@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(191, 230, 236);
+  }
+  h1 {
+    font-size: 3rem; /* Aumenta la dimensione del font */
+}
+  button {
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }    
+  button#siButton {
+    background-color: #4CAF50; /* Verde */
+    box-shadow: 0 4px #2e7d32;
+  }
+
+  button#siButton:hover {
+    background-color: #66bb6a; /* Verde più chiaro */
+    box-shadow: 0 6px #1b5e20;
+  }
+
+  button#siButton:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px #1b5e20;
+  }
+
+  /* Stile per il pulsante "NO" */
+  button#noButton {
+    background-color: #8b0000; /* Rosso-marrone */
+    box-shadow: 0 4px #4b0000;
+  }
+
+  button#noButton:hover {
+    background-color: #a52a2a; /* Marrone più chiaro */
+    box-shadow: 0 6px #5e1a1a;
+  }
+
+  button#noButton:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px #5e1a1a;
+  }
+p{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 40pt;
+}
+.images-row {
+    display: flex;
+    justify-content: space-around;
+    width: 80%; 
+    margin: 10px 0;
+  }
+
+.images-row img {
+width: 20%; 
+height: auto; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
