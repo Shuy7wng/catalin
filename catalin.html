@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Style.css" />
+  <title>MI VUOI BENE?</title>
+</head>
+<body>
+    <h1>Mi vuoi bene?</h1>
+    <div class="buttons">
+      <button id="siButton" onclick="HaDettoDiSi()">SI <3 </button>
+      <button id="noButton" onclick="NonPuoi()">NO :(</button>
+    </div>
+  
+    <script>
+      function HaDettoDiSi() {
+        window.location.href = "catalin2.html";
+      }
+  
+      function NonPuoi() {
+        // Ottieni il pulsante "NO"
+        const noButton = document.getElementById('noButton');
+  
+        // Genera nuove posizioni casuali
+        const randomTop = Math.floor(Math.random() * (window.innerHeight - 50)) + 'px';
+        const randomLeft = Math.floor(Math.random() * (window.innerWidth - 100)) + 'px';
+  
+        // Applica le nuove posizioni
+        noButton.style.position = 'absolute';
+        noButton.style.top = randomTop;
+        noButton.style.left = randomLeft;
+      }
+    </script>
+  </body>
+</html>
